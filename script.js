@@ -11,41 +11,16 @@ if(a === '1'){
 
 // Задания №2
 
-//короткая запись
-let item = prompt('Задания №2. Введите любые символи кроме 0');
-if(item != true){
+//длинная
+let item = prompt('Задания №2. Введите любые символи');
+if(!item){
     alert('Верно');
 }else{
     alert('Не верно'); 
 }
 
-//длинная
-
-if(item != true){
-    alert('Верно');
-}
-else if(item == 0){
-    alert('Верно');
-}
-
-else if(item == ''){
-    alert('Верно');
-}
-
-else if(item == null){
-    alert('Верно');
-}
-
-else if(item == undefined){
-    alert('Верно');
-}
-
-else if(item == NaN){
-    alert('Верно');
-}
-else{
-    alert('Не верно'); 
-}
+//короткая запись
+!item ? console.log('Верно') : console.log('Не верно')
 
 //Задания №3
 
